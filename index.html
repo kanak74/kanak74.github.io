@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanak | Software & Data Engineering Portfolio</title>
+    <style>
+        :root {
+            --bg: #0b1120;
+            --surface: #1e293b;
+            --primary: #38bdf8;
+            --text: #f8fafc;
+            --muted: #94a3b8;
+            --accent: #818cf8;
+            --border: #334155;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background: var(--bg); color: var(--text); line-height: 1.6; padding: 2.5rem 1rem; max-width: 850px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 3.5rem; }
+        .tagline { display: inline-block; padding: 0.35rem 0.9rem; background: rgba(56, 189, 248, 0.12); color: var(--primary); border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 9999px; font-size: 0.85rem; font-weight: 500; margin-bottom: 1.25rem; }
+        h1 { font-size: 2.75rem; margin-bottom: 0.5rem; letter-spacing: -0.025em; }
+        .subtitle { color: var(--muted); font-size: 1.15rem; max-width: 620px; margin: 0 auto 1.75rem; }
+        .contact-links a { color: var(--text); text-decoration: none; margin: 0 0.4rem; padding: 0.5rem 1.2rem; border-radius: 6px; background: var(--surface); border: 1px solid var(--border); font-size: 0.9rem; transition: all 0.2s; font-weight: 500; }
+        .contact-links a:hover { border-color: var(--primary); color: var(--primary); }
+        
+        section { margin-bottom: 3.5rem; }
+        h2 { font-size: 1.4rem; border-bottom: 1px solid var(--border); padding-bottom: 0.6rem; margin-bottom: 1.5rem; color: #e2e8f0; }
+        
+        .skills-grid { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .skill-pill { background: var(--surface); border: 1px solid var(--border); padding: 0.4rem 0.9rem; border-radius: 6px; font-size: 0.85rem; color: var(--primary); font-weight: 500; }
+        
+        .projects-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+        @media(min-width: 640px) { .projects-grid { grid-template-columns: 1fr 1fr; } }
+        .project-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; }
+        .project-card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text); }
+        .project-card p { font-size: 0.9rem; color: var(--muted); margin-bottom: 1.25rem; flex-grow: 1; }
+        .tech-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 1.25rem; }
+        .tech-tag { font-size: 0.75rem; background: rgba(255,255,255,0.06); padding: 0.2rem 0.5rem; border-radius: 4px; color: var(--accent); }
+        .card-actions { display: flex; gap: 0.75rem; }
+        .card-actions a { flex: 1; text-align: center; text-decoration: none; padding: 0.5rem; border-radius: 6px; font-size: 0.85rem; font-weight: 500; }
+        .btn-primary { background: var(--primary); color: #0b1120; }
+        .btn-secondary { background: transparent; border: 1px solid var(--border); color: var(--text); }
+        .btn-secondary:hover { border-color: var(--primary); }
+
+        footer { text-align: center; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--border); padding-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="tagline">Targeting Winter 2026 / Spring 2027 Internships</div>
+        <h1>Hi, I'm Kanak</h1>
+        <p class="subtitle">B.Tech CSE (AI & Data Science) Undergrad building robust backend services and data-driven intelligence systems.</p>
+        <div class="contact-links">
+            <a href="https://github.com/kanak74" target="_blank">GitHub</a>
+            <a href="mailto:kanakknk46@gmail.com">Email Me</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Technical Competencies</h2>
+        <div class="skills-grid">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">PostgreSQL / MySQL</span>
+            <span class="skill-pill">FastAPI</span>
+            <span class="skill-pill">Pandas & NumPy</span>
+            <span class="skill-pill">SQL Window Functions</span>
+            <span class="skill-pill">Docker</span>
+            <span class="skill-pill">Git / GitHub</span>
+            <span class="skill-pill">RESTful APIs</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Featured Engineering Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div>
+                    <h3>SQL Analytics & Reporting Engine</h3>
+                    <p>Automated relational data transformation pipeline utilizing PostgreSQL window functions, CTEs, and automated visual business summaries.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <a href="https://github.com/kanak74" class="btn-primary" target="_blank">Code (In Dev)</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <h3>FastAPI Data Intelligence Service</h3>
+                    <p>Production-grade RESTful API with Pydantic payload validation, connection pooling, automated tests, and Docker containerization.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <a href="https://github.com/kanak74" class="btn-primary" target="_blank">Code (In Dev)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Kanak. Hosted on GitHub Pages.</p>
+    </footer>
+</body>
+</html>
